@@ -30,7 +30,7 @@ h1, h2 {
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: red;
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
 }
@@ -41,10 +41,11 @@ header a {
   animation: hover 1s alternate linear;
 }
 
-@keyframes hover {
+@keyframes
+  from {
+    background-color: red;}
   to {
-    transform: translateY(-9px)
-}
+    background-color: yellow;}
 
 main a {
   color: var(--danger-color);
