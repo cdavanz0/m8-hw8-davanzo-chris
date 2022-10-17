@@ -35,12 +35,18 @@ header {
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-/* header link animations! */
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  animation: hover 1s infinite;
 }
-/* end header link animations */
+
+@keyframes hover {
+  from {
+    transform: translateY(0px)
+  }
+  to {
+    transform: translateY(-9px)
 
 /* article link transitions */
 main a {
