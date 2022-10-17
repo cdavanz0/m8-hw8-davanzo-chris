@@ -38,28 +38,18 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
-  animation: hover 1s infinite;
+  animation: hover 1s alternate linear;
 }
 
 @keyframes hover {
-  from {
-    transform: translateY(0px)
-  }
   to {
     transform: translateY(-9px)
+}
 
-/* article link transitions */
 main a {
   color: var(--danger-color);
   animation: hover 1s infinite;
 }
-    
-@keyframes hover {
-  from {
-    transform: translateY(0px)
-  }
-  to {
-    transform: translateY(-9px)
 
 main > article, nav{
   max-width: 1200px;
@@ -107,12 +97,18 @@ section.hero > .call-to-action {
 }
 
 section.hero > button {
-  background-color: var(--secondary-color);
+  background-color: red;
   border: none;
   padding: 12px 24px;
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: transform 600ms, background-color 800ms;
+}
+    
+  button:hover {
+    background-color: maroon;
+    transform: translateY(-4px);
 }
 
 main article {
